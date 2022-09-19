@@ -52,6 +52,17 @@ class EnableUndoRedo:
     tokyo.redo()
     print(tokyo.state)
 
+    <Output>
+
+    rainy night
+    sunny noon
+    coudy morning
+    None
+
+    coudy morning
+    sunny noon
+    rainy night
+
 # Application
 
 In fact, the instance itself is undo-able, not just the 'state' property. Therefore, if you derive a subclass and add any property, the added property can also be involved in undo and redo. A snapshot of the instance is saved when a new value is assigned to the 'state' property. So you can control the timing of snapshots by using the 'state' property like a timekeeper.
@@ -63,7 +74,7 @@ See next example 2.
 # Class Tokyo derives from EnableUndoRedo with some additional properties (weather and hour).
 
     from undoredo import EnableUndoRedo
-    
+
     # Class Tokyo derives from EnableUndoRedo with some additional properties (weather and hour).
     class Tokyo(EnableUndoRedo):
         def __init__(self) -> None:
@@ -101,3 +112,34 @@ See next example 2.
         tokyo.undo()
         tokyo.show()
 
+    <Output>
+
+    0:00 sunny
+    1:00 rainy
+    2:00 sunny
+    3:00 snow
+    4:00 stormy
+    5:00 cloudy
+    6:00 rainy
+    7:00 sunny
+    8:00 snow
+    9:00 stormy
+    10:00 cloudy
+    11:00 rainy
+    12:00 sunny
+    13:00 snow
+    14:00 stormy
+    15:00 cloudy
+    16:00 rainy
+    17:00 sunny
+    18:00 snow
+    19:00 stormy
+    20:00 cloudy
+    21:00 rainy
+    22:00 sunny
+    23:00 snow
+
+    18:00 snow
+    12:00 sunny
+    6:00 rainy
+    0:00 sunny
