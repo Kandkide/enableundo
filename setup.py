@@ -13,11 +13,9 @@ setup(
         'console_scripts': ['undoredoexample=undoredo_example3:main']
     }
 )
-# https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
+# https://github.com/Kandkide/enableundo.git
 # Boilerplate:
-#   pip install -e .
-#   pip uninstall mpon
-#   pip install git+https://github.com/Kandkide/mpon.git
+#   pip install git+https://github.com/Kandkide/enableundo.git
 #       Need to set Path to git before hand.
 #       (in my environment) "C:\Program Files\Git\bin"
 #       In this case,
