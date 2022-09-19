@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='enableundo',
-    version='1.00',
+    version='1.05',
     packages=find_packages(include=[]),
     install_requires=[
     ],
