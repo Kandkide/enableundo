@@ -36,10 +36,12 @@ class TextWdgt:
         self.text.insert(tk.END, '\n')
         self.entry.delete(0, tk.END)
         
+def main():
+    root = tk.Tk()
+    root.title("Ctrl-U: Undo, Ctrl-R: Redo")
 
-root = tk.Tk()
-root.title("Ctrl-U: Undo, Ctrl-R: Redo")
+    TextWdgt(root)
 
-TextWdgt(root)
+    root.mainloop()
 
-root.mainloop()
+# main()

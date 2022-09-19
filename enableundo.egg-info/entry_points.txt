@@ -1,0 +1,2 @@
+[console_scripts]
+undoredoexample = undoredo_example3:main

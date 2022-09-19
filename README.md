@@ -9,7 +9,19 @@ class EnableUndoRedo
     It has "redo" method in addition.
 
 # Usage
+1, Make an instance
 
+tokyo = EnableUndoRedo()
+
+2, Set some value to 'state' property.
+
+tokyo.state = 'coudy morning'
+tokyo.state = 'sunny noon'
+tokyo.state = 'rainy night'
+
+3, Use undo (and redo) method.
+
+tokyo.undo()
 
 # Example 1
 

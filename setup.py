@@ -1,22 +1,16 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='mpon',
+    name='enableundo',
     version='1.00',
-    packages=find_packages(include=['mptkone', 'mptkone.*', 'functions', 'functions.*']),
+    packages=find_packages(include=[]),
     install_requires=[
-        # 'pickle',
-        # 'openpyxl',
-        # 'pandas>=0.23.3',
-        # 'numpy>=1.14.5',
-        # 'matplotlib>=2.2.0',
-        # 'seaborn'
     ],
     # extras_require={
     #     'mswin': ['pywin32'],
     # }#,
     entry_points={
-        'console_scripts': ['mpon=mptkone.mptkgui:tkbuilder']
+        'console_scripts': ['undoredoexample=undoredo_example3:main']
     }
 )
 # https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
