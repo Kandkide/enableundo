@@ -1,4 +1,8 @@
 # coding: utf-8
+# Allow importing modules from the perspective of one directory above.
+if __name__ == '__main__':
+    import os, sys; sys.path.append(os.path.join(os.path.dirname(__file__), '..' ))
+    
 from undoredo import EnableUndoRedo
 
 # Class Tokyo derives from EnableUndoRedo with some additional properties (weather and hour).

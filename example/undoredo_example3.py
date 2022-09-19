@@ -1,5 +1,9 @@
 # coding: utf-8
 import tkinter as tk
+# Allow importing modules from the perspective of one directory above.
+if __name__ == '__main__':
+    import os, sys; sys.path.append(os.path.join(os.path.dirname(__file__), '..' ))
+    
 from undoredo import EnableUndoRedo
 
 
