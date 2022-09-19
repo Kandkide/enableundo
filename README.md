@@ -62,6 +62,9 @@ See next example 2.
 
 # Class Tokyo derives from EnableUndoRedo with some additional properties (weather and hour).
 
+    from undoredo import EnableUndoRedo
+    
+    # Class Tokyo derives from EnableUndoRedo with some additional properties (weather and hour).
     class Tokyo(EnableUndoRedo):
         def __init__(self) -> None:
             super().__init__()
