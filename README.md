@@ -3,12 +3,12 @@ Two classes which have the ability of undo (and redo).
 
 class EnableUndo:
 
-    It has "state" property which can be used to hold variable and object.
+    It has "state" property which can be used to hold variable or object.
     It also has "undo" methods. Ability to undo changes to the State property.
 
 class EnableUndoRedo:
 
-    It has "redo" method in addition.
+    It has "redo" method in addition to the above.
 
 # Usage
 1, Make an instance
@@ -24,6 +24,7 @@ class EnableUndoRedo:
 3, Use undo (and redo) method.
 
     tokyo.undo()
+    tokyo.redo()
 
 # Example 1
 
