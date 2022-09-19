@@ -72,7 +72,7 @@ See next example 2.
 
 # Example 2
 
-# Class Tokyo derives from EnableUndoRedo with some additional properties (weather and hour).
+## Snapshots and rollbacks of class instances
 
     from undoredo import EnableUndoRedo
 
