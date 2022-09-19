@@ -52,8 +52,8 @@ class EnableUndoRedo:
     tokyo.redo()
     print(tokyo.state)
 
-    <Output>
 
+    <Output>
     rainy night
     sunny noon
     coudy morning
@@ -112,8 +112,8 @@ See next example 2.
         tokyo.undo()
         tokyo.show()
 
-    <Output>
 
+    <Output>
     0:00 sunny
     1:00 rainy
     2:00 sunny
