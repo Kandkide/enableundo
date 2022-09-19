@@ -86,27 +86,4 @@ class EnableUndoRedo:
 
 
 
-if __name__ == "__main__":
-
-    tokyo = EnableUndoRedo()
-    tokyo.state = 'coudy morning'
-    tokyo.state = 'sunny noon'
-    tokyo.state = 'rainy night'
-    print(tokyo.state)
-    tokyo.undo()
-    print(tokyo.state)
-    tokyo.undo()
-    print(tokyo.state)
-    tokyo.undo()
-    print(tokyo.state)
-
-    print()
-
-    tokyo.redo()
-    print(tokyo.state)
-    tokyo.redo()
-    print(tokyo.state)
-    tokyo.redo()
-    print(tokyo.state)
-
 # [Reference] https://note.com/fz5050/n/n62bca270145f
