@@ -2,15 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name='enableundo',
-    version='1.05',
-    packages=find_packages(include=['undoredo', 'undoredo.*', 'example', 'example.*']),
+    version='1.1.0',
+    packages=find_packages(include=['enableundo', 'enableundo.*', 'example', 'example.*']),
     install_requires=[
     ],
     # extras_require={
     #     'mswin': ['pywin32'],
     # }#,
     entry_points={
-        'console_scripts': ['undoredoexample=example.undoredo_example3:main']
+        'console_scripts': ['undo_example=example.undoredo_example3:main']
     }
 )
 # https://github.com/Kandkide/enableundo.git

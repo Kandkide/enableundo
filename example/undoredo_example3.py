@@ -4,7 +4,7 @@ import tkinter as tk
 if __name__ == '__main__':
     import os, sys; sys.path.append(os.path.join(os.path.dirname(__file__), '..' ))
     
-from undoredo import EnableUndoRedo
+from enableundo import EnableUndoRedo
 
 
 class TextWdgt:

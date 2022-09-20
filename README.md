@@ -28,7 +28,7 @@ class EnableUndoRedo:
 
 # Example 1
 
-    from undoredo import EnableUndoRedo
+    from enableundo import EnableUndoRedo
 
     tokyo = EnableUndoRedo()
 
@@ -75,7 +75,7 @@ See next example 2.
 
 ## Snapshots and rollbacks of class instances
 
-    from undoredo import EnableUndoRedo
+    from enableundo import EnableUndoRedo
 
     # Class Tokyo derives from EnableUndoRedo with some additional properties (weather and hour).
     class Tokyo(EnableUndoRedo):
